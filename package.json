@@ -4,15 +4,21 @@
   "description": "Assignment 2 - Glen Correia",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Glen Correia",
   "license": "ISC",
   "dependencies": {
     "assn2-glen": "file:",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "express-handlebars": "^8.0.1",
-    "handlebars": "^4.7.8"
-  }
+    "express-validator": "^7.2.0",
+    "handlebars": "^4.7.8",
+    "vercel": "^37.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.7"
+  },
+  "keywords": []
 }

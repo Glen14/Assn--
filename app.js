@@ -4,7 +4,7 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 
 const hbs = exphbs.create({
@@ -20,7 +20,7 @@ const hbs = exphbs.create({
 
 app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
-
+app.set('views',path.join(__dirname,'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 let movieData;
